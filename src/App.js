@@ -43,3 +43,32 @@ export default function App() {
     </div>
   );
 }
+
+
+/* 
+import express from 'express';
+import cors from 'cors';
+const server = express();
+const PORT = 3030;
+const options = ['fuel', 'battery', 'crystal', 'candle'];
+
+server.use(cors());
+
+server.get('/', async (req, res) => {
+  const randoIndex = Math.floor(Math.random() * (options.length - 1));
+  const valid = options[randoIndex];
+  const image = await fetch(
+    `https://agams-captcha.onrender.com/?captcha=${valid}&pass=agamsclass`
+  );
+  const resImage = await image.text();
+  console.log('resImage', resImage);
+  res.json({
+    resImage,
+    options: options,
+    valid: valid,
+  });
+});
+
+server.listen(PORT);
+
+*/
