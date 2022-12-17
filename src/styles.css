@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+image {
+  margin: 10px;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+#options div {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#options div:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
